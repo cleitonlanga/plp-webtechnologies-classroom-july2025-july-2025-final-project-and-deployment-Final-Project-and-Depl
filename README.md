@@ -3,18 +3,29 @@
 TechVibe is a modern and responsive online store, designed to showcase and sell technology products in Mozambique.  
 The site provides information about the company, mission, team, values, payment methods, shipping options, and customer support.
 
+Vercel Web Url: https://techvibe-phi.vercel.app/
+
 ---
 
 ## 📂 Project Structure
 
 techvibe/
-│── index.html # Home page  
-│── about.html # "About Us" page  
-│── contacts.html # Contacts page  
-│── order.html # Orders page  
-│── styles.css # Global styles  
-│── script.js # JS functionalities (menu, cart, etc.)  
-│── assets/ # Images, icons, and media
+│── css  # Global styles
+   │── about.css
+   │── contacts.css
+   │── home.css
+   │── order.css
+│── js # JS functionalities (menu, cart, etc.) 
+   │──  about.js
+   │──  contacts.js
+   │──  home.js
+   │──  order.js
+│── Pages # Contacts page  
+   │── contacts.html # Contacts page  
+   │── order.html # Orders page  
+   │── about.html # "About Us" page  
+│── index.html # Home page   
+
 
 ---
 
@@ -55,8 +66,9 @@ techvibe/
    ```bash
    git clone https://github.com/cleitonlanga/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl.git
    ```
-2. Open the project in your preferred IDE or text editor.
-3. Start by opening home.html in your browser.
+2. Vercel Web Url: https://techvibe-phi.vercel.app/
+3. Open the project in your preferred IDE or text editor.
+4. Start by opening index.html in your browser.
 
 📱 Responsiveness  
 📌 Mobile-first design
