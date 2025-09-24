@@ -1,0 +1,500 @@
+/* ========== GLOBAL RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #fffbfa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* -----------------------------------*/
+/* Navbar */
+/* -----------------------------------*/
+.header {
+  background: #0d1b2a;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+.nav-menu a {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #8af3ff;
+}
+.nav-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.cart-icon {
+  position: relative;
+}
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: #ff4757;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+/* ========== ORDER TRACKING ========== */
+.order-tracking {
+  background: white;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.tracking-form {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tracking-form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.tracking-form button {
+  background: #007b83;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tracking-form button:hover {
+  background: #005f63;
+}
+
+/* Status Steps */
+.status-steps {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.status-step {
+  width: 40px;
+  height: 40px;
+  background: #ccc;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-step.active {
+  background: #007b83;
+}
+
+/* Timeline */
+.tracking-timeline {
+  margin-top: 20px;
+  border-left: 3px solid #8af3ff;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.timeline-content h4 {
+  color: #007b83;
+}
+
+/* ========== ORDER HISTORY ========== */
+.order-history {
+  margin: 40px 0;
+}
+
+.order-card {
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.order-status {
+  padding: 4px 10px;
+  border-radius: 6px;
+  color: white;
+  font-size: 0.85rem;
+}
+
+.status-shipping {
+  background: orange;
+}
+.status-delivered {
+  background: green;
+}
+.status-cancelled {
+  background: red;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.order-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.item-details h4 {
+  font-size: 1rem;
+}
+
+.item-price {
+  margin-left: auto;
+  font-weight: bold;
+  color: #007b83;
+}
+
+.order-actions button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background: #007b83;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #005f63;
+}
+
+.btn-secondary {
+  background: #f7f0f0;
+}
+
+.btn-secondary:hover {
+  background: #ddd;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  background: #8af3ff;
+  padding: 30px 20px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* ========== CART MODAL ========== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* ==== Shipping Info ==== */
+.shipping-info {
+  background: #f7f0f0; /* cor secundária */
+  padding: 3rem 1rem;
+  margin: 3rem auto;
+  border-radius: 16px;
+  max-width: 1200px;
+}
+
+.shipping-info h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.shipping-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.shipping-option {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shipping-option:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.shipping-icon {
+  font-size: 2rem;
+  color: #8af3ff; /* primária */
+  margin-bottom: 1rem;
+}
+
+.shipping-option h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.shipping-option p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ==== Payment Methods ==== */
+.payment-methods {
+  background: #fff;
+  padding: 3rem 1rem;
+  margin: 3rem auto;
+  border-radius: 16px;
+  max-width: 1200px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.payment-methods h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.payment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.payment-option {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.payment-option:hover {
+  background: #f7f0f0;
+  transform: scale(1.05);
+}
+
+.payment-icon {
+  font-size: 2rem;
+  color: #8af3ff;
+  margin-bottom: 1rem;
+}
+
+/* ==== Returns & Warranty ==== */
+.returns-warranty {
+  background: #f7f0f0;
+  padding: 3rem 1rem;
+  margin: 3rem auto;
+  border-radius: 16px;
+  max-width: 1200px;
+}
+
+.returns-warranty h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.info-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.info-icon {
+  font-size: 2rem;
+  color: #8af3ff;
+  margin-bottom: 1rem;
+}
+
+.info-card h3 {
+  margin-bottom: 1rem;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-card ul li {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ==== Customer Service ==== */
+.customer-service {
+  background: #fff;
+  padding: 3rem 1rem;
+  margin: 3rem auto;
+  border-radius: 16px;
+  max-width: 1200px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.customer-service h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.service-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: #f7f0f0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+
+.service-option:hover {
+  background: #e8e8e8;
+}
+
+.service-option i {
+  font-size: 2rem;
+  color: #8af3ff;
+}
+
+.service-option h3 {
+  margin: 0;
+}
+
+.chat-btn-small {
+  margin-top: 0.5rem;
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+  background: #8af3ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.chat-btn-small:hover {
+  background: #6adce5;
+}
