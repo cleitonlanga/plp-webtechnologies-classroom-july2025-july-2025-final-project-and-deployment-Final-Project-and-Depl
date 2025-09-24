@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Orders - TechVibe</title>
+        <link rel="stylesheet" href="./css/order.css" />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <div class="logo">
+                        <i class="fas fa-bolt"></i>
+                        <span>TechVibe</span>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
+                        <li><a href="order.html" class="active">Orders</a></li>
+                    </ul>
+                    <div class="nav-icons">
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-user"></i>
+                        <div class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Page Header -->
+            <section class="page-header">
+                <div class="container">
+                    <h1>Order Management</h1>
+                    <p>Track the status of your orders</p>
+                </div>
+            </section>
+
+            <!-- Order Content -->
+            <section class="page-content">
+                <div class="container">
+                    <!-- Order Tracking -->
+                    <div class="order-tracking">
+                        <h2>Track Order</h2>
+                        <p>
+                            Enter your order number to check the current status.
+                        </p>
+
+                        <form class="tracking-form">
+                            <input
+                                type="text"
+                                placeholder="Order number (e.g.: TV20240001)"
+                                required
+                            />
+                            <button type="submit">
+                                <i class="fas fa-search"></i> Track
+                            </button>
+                        </form>
+
+                        <div class="order-status">
+                            <h3>Order Status #TV20240001</h3>
+                            <div class="order-details">
+                                <div class="order-info">
+                                    <p>
+                                        <strong>Order Date:</strong> September 20, 2024
+                                    </p>
+                                    <p>
+                                        <strong>Estimated Delivery Date:</strong> September 22, 2024
+                                    </p>
+                                    <p><strong>Delivery Method:</strong> Standard Delivery</p>
+                                    <p>
+                                        <strong>Delivery Address:</strong> Rua da Paz, 123, Maputo
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="status-steps">
+                                <div class="status-step active">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="status-step active">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="status-step active">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <div class="status-step">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                            </div>
+
+                            <div class="status-labels">
+                                <span class="active">Confirmed</span>
+                                <span class="active">Processing</span>
+                                <span class="active">In Transit</span>
+                                <span>Delivered</span>
+                            </div>
+
+                            <div class="tracking-timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-date">Sep 20, 14:30</div>
+                                    <div class="timeline-content">
+                                        <h4>Order Confirmed</h4>
+                                        <p>
+                                            Your order has been confirmed and payment processed successfully.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">Sep 20, 16:45</div>
+                                    <div class="timeline-content">
+                                        <h4>Processing</h4>
+                                        <p>
+                                            Your products are being prepared in our warehouse for shipping.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">Sep 21, 09:15</div>
+                                    <div class="timeline-content">
+                                        <h4>Shipped</h4>
+                                        <p>
+                                            Your order has been shipped and is on its way to the delivery address.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Order History -->
+                    <div class="order-history">
+                        <h2>Order History</h2>
+                        <p>
+                            Access your purchase history.
+                            <a href="#" class="login-link">Log in</a> to view your orders.
+                        </p>
+
+                        <div class="demo-orders">
+                            <h3>Demo Orders</h3>
+
+                            <div class="order-card">
+                                <div class="order-header">
+                                    <div class="order-number">#TV20240001</div>
+                                    <div class="order-date">Sep 20, 2024</div>
+                                    <div class="order-status status-shipping">In Transit</div>
+                                </div>
+                                <div class="order-items">
+                                    <div class="order-item">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="iPhone 15 Pro"
+                                        />
+                                        <div class="item-details">
+                                            <h4>iPhone 15 Pro</h4>
+                                            <p>Quantity: 1</p>
+                                        </div>
+                                        <div class="item-price">75,000.00 MT</div>
+                                    </div>
+                                </div>
+                                <div class="order-total">
+                                    <strong>Total: 75,000.00 MT</strong>
+                                </div>
+                                <div class="order-actions">
+                                    <button class="btn btn-secondary">View Details</button>
+                                    <button class="btn btn-primary">Track</button>
+                                </div>
+                            </div>
+
+                            <div class="order-card">
+                                <div class="order-header">
+                                    <div class="order-number">#TV20240002</div>
+                                    <div class="order-date">Sep 15, 2024</div>
+                                    <div class="order-status status-delivered">Delivered</div>
+                                </div>
+                                <div class="order-items">
+                                    <div class="order-item">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="MacBook Air"
+                                        />
+                                        <div class="item-details">
+                                            <h4>MacBook Air M3</h4>
+                                            <p>Quantity: 1</p>
+                                        </div>
+                                        <div class="item-price">95,000.00 MT</div>
+                                    </div>
+                                    <div class="order-item">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="AirPods"
+                                        />
+                                        <div class="item-details">
+                                            <h4>AirPods Pro 2</h4>
+                                            <p>Quantity: 1</p>
+                                        </div>
+                                        <div class="item-price">18,000.00 MT</div>
+                                    </div>
+                                </div>
+                                <div class="order-total">
+                                    <strong>Total: 113,000.00 MT</strong>
+                                </div>
+                                <div class="order-actions">
+                                    <button class="btn btn-secondary">View Details</button>
+                                    <button class="btn btn-primary">Buy Again</button>
+                                </div>
+                            </div>
+
+                            <div class="order-card">
+                                <div class="order-header">
+                                    <div class="order-number">#TV20240003</div>
+                                    <div class="order-date">Sep 10, 2024</div>
+                                    <div class="order-status status-cancelled">Cancelled</div>
+                                </div>
+                                <div class="order-items">
+                                    <div class="order-item">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                            alt="Dell XPS"
+                                        />
+                                        <div class="item-details">
+                                            <h4>Dell XPS 13</h4>
+                                            <p>Quantity: 1</p>
+                                        </div>
+                                        <div class="item-price">85,000.00 MT</div>
+                                    </div>
+                                </div>
+                                <div class="order-total">
+                                    <strong>Total: 85,000.00 MT</strong>
+                                </div>
+                                <div class="order-actions">
+                                    <button class="btn btn-secondary">View Details</button>
+                                    <button class="btn btn-primary">Buy Again</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Info -->
+                    <div class="shipping-info">
+                        <h2>Shipping Information</h2>
+                        <div class="shipping-grid">
+                            <div class="shipping-option">
+                                <div class="shipping-icon">
+                                    <i class="fas fa-shipping-fast"></i>
+                                </div>
+                                <h3>Fast Delivery</h3>
+                                <p><strong>Maputo:</strong> Same day (orders until 2pm)</p>
+                                <p><strong>Other cities:</strong> 24-48h</p>
+                                <p><strong>Cost:</strong> 200-500 MT</p>
+                            </div>
+
+                            <div class="shipping-option">
+                                <div class="shipping-icon">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <h3>Standard Delivery</h3>
+                                <p><strong>Maputo:</strong> 1-2 business days</p>
+                                <p><strong>Other provinces:</strong> 3-5 business days</p>
+                                <p><strong>Cost:</strong> 100-300 MT</p>
+                            </div>
+
+                            <div class="shipping-option">
+                                <div class="shipping-icon">
+                                    <i class="fas fa-store"></i>
+                                </div>
+                                <h3>Store Pickup</h3>
+                                <p><strong>Available:</strong> 2-4 hours after confirmation</p>
+                                <p><strong>Hours:</strong> 8am-6pm (Mon-Fri), 9am-3pm (Sat)</p>
+                                <p><strong>Cost:</strong> Free</p>
+                            </div>
+
+                            <div class="shipping-option">
+                                <div class="shipping-icon">
+                                    <i class="fas fa-motorcycle"></i>
+                                </div>
+                                <h3>Express Delivery</h3>
+                                <p><strong>Maputo:</strong> 1-3 hours</p>
+                                <p><strong>Available:</strong> 8am-6pm every day</p>
+                                <p><strong>Cost:</strong> 800-1200 MT</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Methods -->
+                    <div class="payment-methods">
+                        <h2>Payment Methods</h2>
+                        <div class="payment-grid">
+                            <div class="payment-option">
+                                <div class="payment-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <h3>M-Pesa</h3>
+                                <p>Fast and secure payment via your mobile phone</p>
+                            </div>
+
+                            <div class="payment-option">
+                                <div class="payment-icon">
+                                    <i class="fas fa-credit-card"></i>
+                                </div>
+                                <h3>Credit/Debit Card</h3>
+                                <p>Visa, Mastercard accepted with SSL security</p>
+                            </div>
+
+                            <div class="payment-option">
+                                <div class="payment-icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <h3>Bank Transfer</h3>
+                                <p>BCI, Millennium BIM, Standard Bank</p>
+                            </div>
+
+                            <div class="payment-option">
+                                <div class="payment-icon">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </div>
+                                <h3>Cash on Delivery</h3>
+                                <p>Pay in cash when you receive your order</p>
+                            </div>
+
+                            <div class="payment-option">
+                                <div class="payment-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <h3>Installment Payment</h3>
+                                <p>Split payment into up to 12 installments</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Returns & Warranty -->
+                    <div class="returns-warranty">
+                        <h2>Returns and Warranty</h2>
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-undo-alt"></i>
+                                </div>
+                                <h3>Return Policy</h3>
+                                <ul>
+                                    <li>7 days to return products</li>
+                                    <li>Product must be in original condition</li>
+                                    <li>Packaging and accessories included</li>
+                                    <li>Refund processed in 3-5 business days</li>
+                                </ul>
+                            </div>
+
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h3>Warranty</h3>
+                                <ul>
+                                    <li>Smartphones: 1-2 years</li>
+                                    <li>Laptops: 1-3 years</li>
+                                    <li>Accessories: 6-12 months</li>
+                                    <li>Free repair or replacement</li>
+                                </ul>
+                            </div>
+
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <h3>Technical Support</h3>
+                                <ul>
+                                    <li>Authorized repair center</li>
+                                    <li>Certified technicians</li>
+                                    <li>Original parts</li>
+                                    <li>Free diagnostics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Customer Service -->
+                    <div class="customer-service">
+                        <h2>Need Help?</h2>
+                        <div class="service-options">
+                            <div class="service-option">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h3>Call Us</h3>
+                                    <p>+258 84 123 4567</p>
+                                    <small>8am-8pm, every day</small>
+                                </div>
+                            </div>
+
+                            <div class="service-option">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3>Email</h3>
+                                    <p>support@techvibe.co.mz</p>
+                                    <small>Reply within 24h</small>
+                                </div>
+                            </div>
+
+                            <div class="service-option">
+                                <i class="fas fa-comments"></i>
+                                <div>
+                                    <h3>Online Chat</h3>
+                                    <p>Available 24/7</p>
+                                    <button class="chat-btn-small">Start Chat</button>
+                                </div>
+                            </div>
+
+                            <div class="service-option">
+                                <i class="fab fa-whatsapp"></i>
+                                <div>
+                                    <h3>WhatsApp</h3>
+                                    <p>+258 84 123 4567</p>
+                                    <small>Quick response</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="logo">
+                            <i class="fas fa-bolt"></i>
+                            <span>TechVibe</span>
+                        </div>
+                        <p>
+                            Your trusted store for cutting-edge technology with guaranteed quality.
+                        </p>
+                        <div class="social-icons">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="order.html">Orders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Customer Service</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <div class="contact-info">
+                            <p><i class="fas fa-phone"></i> +258 84 123 4567</p>
+                            <p><i class="fas fa-envelope"></i> info@techvibe.co.mz</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Maputo, Mozambique</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 TechVibe. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Cart Modal -->
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Shopping Cart</h2>
+                <div id="cart-items"></div>
+                <div class="cart-total">
+                    <h3>Total: <span id="cart-total">0.00 MT</span></h3>
+                </div>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+
+        <script src="./js/order.js"></script>
+    </body>
+</html>

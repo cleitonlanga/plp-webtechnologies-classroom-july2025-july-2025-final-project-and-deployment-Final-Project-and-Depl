@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechVibe - Your Technology Store</title>
+    <link rel="stylesheet" href="./css/home.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <i class="fas fa-bolt"></i>
+            <span>TechVibe</span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="order.html">Orders</a></li>
+          </ul>
+          <div class="nav-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-user"></i>
+            <div class="cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </div>
+          </div>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Discover the Technology of the Future</h1>
+            <p>
+              The best gadgets and tech devices with fast delivery and quality
+              guarantee.
+            </p>
+            <button class="cta-button">Explore Products</button>
+          </div>
+          <div class="hero-image">
+            <img
+              src="https://images.unsplash.com/photo-1468436139062-f60a71c5c892?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Technology"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories -->
+      <section class="categories">
+        <div class="container">
+          <h2>Popular Categories</h2>
+          <div class="category-grid">
+            <div class="category-card">
+              <img
+                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Smartphones"
+              />
+              <h3>Smartphones</h3>
+              <p>The latest models from top brands</p>
+            </div>
+            <div class="category-card">
+              <img
+                src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Laptops"
+              />
+              <h3>Laptops</h3>
+              <p>Performance and portability first</p>
+            </div>
+            <div class="category-card">
+              <img
+                src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Headphones"
+              />
+              <h3>Audio</h3>
+              <p>High quality sound for every taste</p>
+            </div>
+            <div class="category-card">
+              <img
+                src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Gaming"
+              />
+              <h3>Gaming</h3>
+              <p>Professional equipment for gamers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products -->
+      <section class="featured-products">
+        <div class="container">
+          <h2>Featured Products</h2>
+          <div class="products-grid" id="featured-products">
+            <!-- Products will be loaded by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="newsletter">
+        <div class="container">
+          <div class="newsletter-content">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter and get exclusive offers</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="logo">
+              <i class="fas fa-bolt"></i>
+              <span>TechVibe</span>
+            </div>
+            <p>
+              Your trusted store for cutting-edge technology with guaranteed
+              quality.
+            </p>
+            <div class="social-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="order.html">Orders</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <div class="contact-info">
+              <p><i class="fas fa-phone"></i> +258 84 123 4567</p>
+              <p><i class="fas fa-envelope"></i> info@techvibe.co.mz</p>
+              <p><i class="fas fa-map-marker-alt"></i> Maputo, Mozambique</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 TechVibe. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Shopping Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+          <h3>Total: <span id="cart-total">0.00 MT</span></h3>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+
+    <script src="./js/home.js"></script>
+  </body>
+</html>
