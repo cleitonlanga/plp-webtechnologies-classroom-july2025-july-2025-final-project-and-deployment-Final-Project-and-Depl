@@ -1,90 +1,77 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+# 🖥️ TechVibe Website
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
-
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
-
----
-
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
-
-Before you write any code, take time to plan:
-
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
-
-**Goal:** Show intentional structure and user journey across the site.
+TechVibe is a modern and responsive online store, designed to showcase and sell technology products in Mozambique.  
+The site provides information about the company, mission, team, values, payment methods, shipping options, and customer support.
 
 ---
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+## 📂 Project Structure
 
-Using your plan, begin building:
-
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
-
-Each page should:
-
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
-
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+techvibe/
+│── index.html # Home page  
+│── about.html # "About Us" page  
+│── contacts.html # Contacts page  
+│── order.html # Orders page  
+│── styles.css # Global styles  
+│── script.js # JS functionalities (menu, cart, etc.)  
+│── assets/ # Images, icons, and media
 
 ---
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
+## 🎨 Color Palette
 
-Before deployment, refactor your project to follow production-friendly practices:
-
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
-
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
+- **Primary:** `#8AF3FF`
+- **Secondary:** `#F7F0F0`
+- **Tertiary:** `#FFFBFA`
 
 ---
 
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
+## ✨ Features
 
-Once your project is complete, choose a method to **host your site online**.
-
-You can use:
-
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
-
-Deploy your project and confirm that:
-
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
-
-**Goal:** Publish your work online and make it accessible to the world.
+- 🌍 Responsive layout (mobile, tablet, desktop)
+- 🛒 Shopping cart modal
+- 📦 **Shipping** information with multiple options
+- 💳 Payment methods (M-Pesa, Card, Bank Transfer, etc.)
+- 🔄 Return and warranty policy
+- 📞 Customer support (Phone, Email, Chat, WhatsApp)
+- 👥 Team page and company values
+- 📊 Company statistics
 
 ---
 
-## Deliverables
+## 🚀 Technologies Used
 
-1. A GitHub repository containing:
-
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
+- **HTML5** – page structure
+- **CSS3** – styling with grid and flexbox
+- **JavaScript** – menu and cart functionalities
+- **Font Awesome** – modern icons
+- **Google Fonts** – stylish typography
 
 ---
 
-## Outcome
+## 📦 How to Use
 
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/cleitonlanga/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl.git
+   ```
+2. Open the project in your preferred IDE or text editor.
+3. Start by opening home.html in your browser.
+
+📱 Responsiveness  
+📌 Mobile-first design
+
+📌 Grid layout for sections like shipping, payment, and warranty
+
+📌 Menus adapted to hamburger menu on mobile
+
+📧 Contact  
+If you want to contribute or suggest improvements:
+
+Email: info@techvibe.co.mz
+
+Phone: +258 84 123 4567
+
+📜 License  
+This project is for educational and demonstration purposes.  
+All rights reserved to TechVibe © 2024.
